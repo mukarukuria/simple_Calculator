@@ -20,10 +20,15 @@ body, html {
 .display {
 	width: 100%;
 	height: 60px;
-	padding: 40px 0;
+	padding: 0 0 70px 0;
 	background: #FF0509;
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
+}
+#history{
+	text-align: right;
+	font-size: 25px;
+	padding: 10px 0px;
 }
 .buttons {
 	padding: 20px 20px 0 20px;
@@ -32,7 +37,7 @@ body, html {
 	width: 280px;
 	float: left;
 }
-input[type=button] {
+.btn {
 	width: 60px;
 	height: 60px;
 	float: left;
@@ -47,23 +52,37 @@ input[type=button] {
 	font-weight: 700;
 	color: #5E5858;
 	cursor: pointer;
-	
 }
-input[type=text] {
+.btn-clear{
+	width: 115px;
+	height: 60px;
+	margin: 5px;
+	box-sizing: border-box;
+	background: #ecedef;
+	border: none;
+	font-size: 30px;
+	line-height: 30px;
+	border-radius: 15%;
+	font-weight: 700;
+	color: #5E5858;
+	cursor: pointer;
+}
+input[type=text] , input[type=number]{
 	width: 270px;
 	height: 60px;
-	float: left;
-	padding: 0;
 	box-sizing: border-box;
 	border: none;
 	background: none;
+}
+input[type=text]{
+	padding: 0;
 	color: #ffffff;
 	text-align: right;
-	font-weight: 700;
 	font-size: 60px;
+	float: left;
+	font-weight: 700;
 	line-height: 60px;
-	margin: 0 25px;
-	
+	margin: 0 25px
 }
 .red {
 	background: #FF0509 !important;

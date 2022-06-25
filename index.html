@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form name="form">
+            <div class="display">
+                <input type="text" id="history">
+                <input type="text" placeholder="0" id="displayResult" />
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button type="button" class="btn numButtons" data-num="7">7</button>
+                    <button type="button" class="btn numButtons" data-num="8">8</button>
+                    <button type="button" class="btn numButtons" data-num="9">9</button>
+                    <button type="button" class="btn numButtons" data-num="+">+</button>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn numButtons" data-num="4">4</button>
+                    <button type="button" class="btn numButtons" data-num="5">5</button>
+                    <button type="button" class="btn numButtons" data-num="6">6</button>
+                    <button type="button" class="btn numButtons" data-num="-">-</button>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn numButtons" data-num="1">1</button>
+                    <button type="button" class="btn numButtons" data-num="2">2</button>
+                    <button type="button" class="btn numButtons" data-num="3">3</button>
+                    <button type="button" class="btn numButtons" data-num="*">*</button>
+
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn numButtons" data-num="0">0</button>
+                    <button type="button" class="btn numButtons" data-num=".">.</button>
+                    <button type="button" class="btn numButtons" data-num="/">/</button>
+                    <button type="button" class="btn red">=</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn-clear">Clear</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
+
