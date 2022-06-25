@@ -12,7 +12,7 @@ function del() {
     let his = history.value.slice(0, -1);
     history.value = his;
 }
-function clear() {
+function clearbtn() {
     history.value ="";   
     ans.value="";
 }
