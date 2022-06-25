@@ -1,9 +1,6 @@
 let buttons = document.querySelectorAll(".numButtons");
 let history = document.querySelector("#history");
 let ans = document.querySelector("#displayResult");
-let clear = document.querySelector(".btn-clear");
-let equal = document.querySelector(".red")
-
 
 buttons.forEach(function(button){
     button.addEventListener('click', function(e) {
@@ -11,11 +8,16 @@ buttons.forEach(function(button){
         history.value += values;
     })
 })
- clear.addEventListener('click', function(e) {
+function del() {
+    let his = history.value.slice(0, -1);
+    history.value = his;
+}
+function clear() {
     history.value ="";   
     ans.value="";
- })
- equal.addEventListener('click', function(e){
+}
+function compute(){
     let answer = eval(history.value);
     ans.value = answer;
- })
+}
+
