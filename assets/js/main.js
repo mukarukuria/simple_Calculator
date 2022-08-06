@@ -17,7 +17,12 @@ function clearbtn() {
     ans.value="";
 }
 function compute(){
-    let answer = eval(history.value);
-    ans.value = answer;
+    try {
+        let answer = eval(history.value);
+        ans.value = answer;
+    } catch (error) {
+        ans.value = "ERROR";
+    }
+    
 }
 
