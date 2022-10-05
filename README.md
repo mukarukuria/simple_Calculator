@@ -3,4 +3,6 @@
 This is a simple Calculator using simple vanilla javascript, HTML, and CSS.
 
 
-> **Happy Coding `:)`**
+> **To view the app click here**
+
+
